@@ -1,0 +1,62 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "XJ51GG1ldeUoEORuzUsTs"
+uri = "file://artifacts/smoke-shop/public/images/cat-glass-pipes.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "jQTfxfQ9HGqrmqm3pKA83"
+uri = "file://artifacts/smoke-shop/public/images/cat-vaporizers.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "CiWGKHYkimZ5tJ2P0GT59"
+uri = "file://artifacts/smoke-shop/public/images/cat-rolling-papers.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "nmGjeZVllt_yu8cKf5U9-"
+uri = "file://artifacts/smoke-shop/public/images/cat-accessories.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "p9f9ifQHndh3zu-kwuupJ"
+uri = "file://artifacts/smoke-shop/public/images/cat-hookahs.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "izYBAnioLBIcTPzP-lZDO"
+uri = "file://artifacts/smoke-shop/public/images/prod-crystal-helix.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "ah01hNN4Z6DabIocdV697"
+uri = "file://artifacts/smoke-shop/public/images/prod-aurora-bubbler.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "1-6DBkXjHKFi7xTyQnDVR"
+uri = "file://artifacts/smoke-shop/public/images/prod-nebula-pipe.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "PZQzO44CycqYLMulQ70BC"
+uri = "file://artifacts/smoke-shop/public/images/prod-volcano-vaporizer.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "nAvB0irD4Pq2f48WY4TB9"
+uri = "file://artifacts/smoke-shop/public/images/prod-pax-plus.png"
+type = "image"
+title = "generated_image"
