@@ -1,9 +1,13 @@
-const BASE = "/api";
+// الحل القاطع: وضع رابط السيرفر مباشرة في الكود لضمان الاتصال
+const BASE = "https://smoke-shop-nexus--saleamsmokeshop.replit.app/api";
 
 async function req<T>(method: string, path: string, body?: unknown): Promise<T> {
   const opts: RequestInit = { method, headers: { "Content-Type": "application/json" } };
   if (body !== undefined) opts.body = JSON.stringify(body);
+  
+  // الآن الطلب سيذهب مباشرة لرابط Replit المنشور
   const res = await fetch(`${BASE}${path}`, opts);
+  
   if (!res.ok) {
     const err = await res.json().catch(() => ({ error: res.statusText }));
     throw new Error(err.error ?? res.statusText);

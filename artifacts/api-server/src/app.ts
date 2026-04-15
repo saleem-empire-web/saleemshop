@@ -25,7 +25,22 @@ app.use(
     },
   }),
 );
-app.use(cors());
+
+// --- التعديل الجوهري هنا ---
+// تم إعداد CORS للسماح بالطلبات القادمة من الدومين الخاص بك ومن بيئة التطوير
+app.use(cors({
+  origin: [
+    "https://saleemempire.com", 
+    "https://smoke-shop-nexus--saleamsmokeshop.replit.app",
+    "http://localhost:5173", // لدعم التشغيل المحلي إذا احتجت
+    /\.replit\.app$/          // للسماح بأي رابط فرعي من ريبليت
+  ],
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With", "Accept"]
+}));
+// -------------------------
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
