@@ -1,5 +1,5 @@
 // الحل القاطع: وضع رابط السيرفر مباشرة في الكود لضمان الاتصال
-const BASE = "https://smoke-shop-nexus--saleamsmokeshop.replit.app/api";
+const BASE = "https://saleemshop.onrender.com/api";
 
 async function req<T>(method: string, path: string, body?: unknown): Promise<T> {
   const opts: RequestInit = { method, headers: { "Content-Type": "application/json" } };
