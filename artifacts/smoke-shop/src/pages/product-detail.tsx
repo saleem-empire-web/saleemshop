@@ -80,7 +80,7 @@ export default function ProductDetailPage() {
       <div className="grid md:grid-cols-2 gap-8">
         <div className="aspect-square rounded-lg overflow-hidden bg-muted relative">
           <img
-            src={product.imageUrl}
+            src={`${import.meta.env.VITE_API_URL?.replace("/api","") ?? ""}${product.imageUrl}`}
             alt={name}
             className="object-cover w-full h-full"
           />

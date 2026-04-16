@@ -74,7 +74,7 @@ export default function HomePage() {
               <Link key={cat.id} href={`/categories/${cat.id}`}>
                 <div className="group relative rounded-lg overflow-hidden bg-card border border-border/40 hover:border-primary/40 transition-all h-32 flex items-end" data-testid={`card-category-${cat.id}`}>
                   <img
-                    src={cat.imageUrl}
+                    src={`${import.meta.env.VITE_API_URL?.replace("/api","") ?? ""}${cat.imageUrl}`}
                     alt={language === "ar" ? cat.nameAr : cat.name}
                     className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity"
                   />

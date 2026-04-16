@@ -132,7 +132,7 @@ export default function CartPage() {
             return (
               <div key={item.product.id} className="flex gap-4 rounded-lg border border-border/40 bg-card p-4">
                 <div className="w-20 h-20 rounded-md overflow-hidden bg-muted flex-shrink-0">
-                  <img src={item.product.imageUrl} alt={name} className="w-full h-full object-cover" />
+                  <img src={`${import.meta.env.VITE_API_URL?.replace("/api","") ?? ""}${item.product.imageUrl}`} alt={name} className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="font-medium text-sm text-foreground truncate">{name}</h3>
