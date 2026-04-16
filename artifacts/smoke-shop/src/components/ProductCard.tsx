@@ -23,7 +23,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       <Link href={`/products/${product.id}`}>
         <div className="aspect-square overflow-hidden bg-muted relative">
           <img
-            src={`${import.meta.env.VITE_API_URL?.replace("/api","") ?? ""}${product.imageUrl}`}
+            src={product.imageUrl}
             alt={name}
             className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
           />
